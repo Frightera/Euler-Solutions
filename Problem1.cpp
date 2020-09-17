@@ -18,14 +18,12 @@ void solution1() {
 	struct timespec start, end;
 	clock_gettime(CLOCK_MONOTONIC, &start);
     ios_base::sync_with_stdio(false); 
-    
-	int last = 999;
 	 
-    int sum3 = 3 * sum(last/3); // 3(1+2+3+...) = 3+6+9+...
-    int	sum5 = 5 * sum(last/5); // 5(1+2+3+...) = 5+10+15...
+    int sum3 = 3 * sum(999/3); // 3(1+2+3+...) = 3+6+9+...
+    int	sum5 = 5 * sum(999/5); // 5(1+2+3+...) = 5+10+15...
  
     // Remove duplicates
-    int sum15 = 15 * sum(last / 15); // 15 = 3*5, so 15 30.. and so on counted twice.
+    int sum15 = 15 * sum(999/15); // 15 = 3*5, so 15 30.. and so on counted twice.
     cout << (sum3 + sum5 - sum15) << endl;
     
 	clock_gettime(CLOCK_MONOTONIC, &end); 
