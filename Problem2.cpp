@@ -2,9 +2,13 @@
 #include <sys/time.h>
 #include <iomanip> 
 
+/*
+Output: 4613732
+Time taken by program is : 0.000258 sec
+*/
+
 using namespace std;
-  
-// Driver code 
+ 
 int main() {
 	
 	struct timespec start, end;
@@ -20,7 +24,7 @@ int main() {
     while (f2 <= 4000000){ 
         // next even number of Fibonacci series 
         long long int f3 = 4*f2 + f1; // Fnext = 4*F5 + F2 
-  										 // Fnext = 4*8 + 2 
+  					 // Fnext = 4*8 + 2 
         if (f3 > 4000000) {
             break; 
 	} 
