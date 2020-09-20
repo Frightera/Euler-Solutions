@@ -20,7 +20,7 @@ int main() {
 	for (k=1; k<=500; k++) { // 500 is the max value that they can have
 		for (n=1; n<=500; n++) { // even if they are equal.
 			m=1000-k-n;
-			if (pow(k,2)+pow(n,2)-pow(m,2) == 0 && k<n ) {
+			if (pow(k,2)+pow(n,2) == pow(m,2) && k<n ) {
 				cout<<"The triplet product: " << k*n*m << endl;
 			}
 		}
