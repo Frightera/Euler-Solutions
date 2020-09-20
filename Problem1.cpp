@@ -2,9 +2,19 @@
 #include <sys/time.h>
 #include <iomanip>
 
+/*
+Output Solution1: 233168
+Time taken by program is : 0.000315 sec
+*/
+
+/*
+Output Solution2: Sum is 233168
+Time taken by program is : 0.000362 sec
+*/
+
 using namespace std;
 
-unsigned long long sum(unsigned long long x);
+long long sum(unsigned long long x);
 void solution1();
 void solution2();
  
@@ -60,7 +70,7 @@ void solution2() {
     cout << " sec" << endl; 
 }
 
-unsigned long long sum(unsigned long long x) {
+long long sum(unsigned long long x) {
   return x * (x + 1) / 2;
 }
 
